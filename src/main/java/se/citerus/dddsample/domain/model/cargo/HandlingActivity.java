@@ -33,7 +33,7 @@ public class HandlingActivity implements ValueObject<HandlingActivity> {
   public HandlingActivity(final HandlingEvent.Type type, final Location location, final Voyage voyage) {
     Validate.notNull(type, "Handling event type is required");
     Validate.notNull(location, "Location is required");
-    Validate.notNull(location, "Voyage is required");
+    Validate.notNull(voyage, "Voyage is required");
 
     this.type = type;
     this.location = location;
